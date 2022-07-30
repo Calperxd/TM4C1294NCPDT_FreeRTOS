@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/calper/Projetos/TM4C1294NCPDT/TivaWare/third_party/FreeRTOS/Demo'
+make: Leaving directory '/home/calper/Projetos/TM4C1294NCPDT/TivaWare/third_party/FreeRTOS/Demo'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

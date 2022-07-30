@@ -1,0 +1,11 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/calper/Projetos/TM4C1294NCPDT/TivaWare'
+for i in driverlib ../FreeRTOS/FreeRTOS/Source ../FreeRTOS/FreeRTOS/Source/portable/MemMang ../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F ;                  \
+ do                                 \
+     if [ -f ${i}/Makefile ];      \
+     then                           \
+         make -C ${i} || exit $?; \
+     fi;                            \
+ done
+make: Leaving directory '/home/calper/Projetos/TM4C1294NCPDT/TivaWare'
+ 

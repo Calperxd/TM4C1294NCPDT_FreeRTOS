@@ -1,0 +1,61 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/calper/Projetos/TM4C1294NCPDT/FreeRTOS/FreeRTOS/Source'
+mkdir -p gcc
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    croutine.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/croutine.o croutine.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/croutine.o croutine.c
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    event_groups.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/event_groups.o event_groups.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/event_groups.o event_groups.c
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    list.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/list.o list.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/list.o list.c
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    queue.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/queue.o queue.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/queue.o queue.c
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    stream_buffer.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/stream_buffer.o stream_buffer.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/stream_buffer.o stream_buffer.c
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    tasks.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/tasks.o tasks.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/tasks.o tasks.c
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    timers.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/timers.o timers.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I./include -I./portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/timers.o timers.c
+if [ 'x' = x ];     \
+ then                          \
+     echo "  AR    gcc/libFreeRTOSCore.a";      \
+ else                          \
+     echo arm-none-eabi-ar -cr gcc/libFreeRTOSCore.a gcc/croutine.o gcc/event_groups.o gcc/list.o gcc/queue.o gcc/stream_buffer.o gcc/tasks.o gcc/timers.o; \
+ fi
+arm-none-eabi-ar -cr gcc/libFreeRTOSCore.a gcc/croutine.o gcc/event_groups.o gcc/list.o gcc/queue.o gcc/stream_buffer.o gcc/tasks.o gcc/timers.o
+make: Leaving directory '/home/calper/Projetos/TM4C1294NCPDT/FreeRTOS/FreeRTOS/Source'
+ 

@@ -1,0 +1,723 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Jul 29 21:45:40 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# makefile (from '../../TivaWare/makedefs', line 116)
+AR = ${PREFIX}-ar
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+# environment
+LC_NAME = pt_BR.UTF-8
+# environment
+LC_NUMERIC = pt_BR.UTF-8
+# environment
+VSCODE_CWD = /home/calper
+# environment
+WINDOWPATH = 2
+# environment
+LC_ADDRESS = pt_BR.UTF-8
+# makefile (from 'Makefile', line 68)
+IPATH = ../../TivaWare ../../FreeRTOS ../../FreeRTOS/FreeRTOS/Source/include ../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F ${FreeRTOSConfig}
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# makefile (from 'Makefile', line 53)
+ROOTFREERTOS = ../../FreeRTOS
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/calper/Projetos/TM4C1294NCPDT/Firmware/project2
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/calper/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/calper/Projetos/TM4C1294NCPDT/Firmware/project2
+# makefile (from '../../TivaWare/makedefs', line 141)
+LIBM := /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
+# makefile (from '../../TivaWare/makedefs', line 136)
+LIBC := /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'gcc/startup_gcc.d', line 1)
+MAKEFILE_LIST := Makefile ../../TivaWare/makedefs gcc/project.d gcc/startup_gcc.d
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 104793
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/calper-Dell-G15-5511:@/tmp/.ICE-unix/2387,unix/calper-Dell-G15-5511:/tmp/.ICE-unix/2387
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from '../../TivaWare/makedefs', line 55)
+COMPILER = gcc
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# makefile (from 'Makefile', line 101)
+CFLAGSgcc = -DTARGET_IS_TM4C129_RA1
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/calper/.local/bin:/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin:/home/calper/.cargo/bin:/home/calper/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_US:en
+# environment
+LC_MONETARY = pt_BR.UTF-8
+# automatic
+^F = $(notdir $^)
+# makefile (from '../../TivaWare/makedefs', line 88)
+FPU = -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+# environment
+LC_TIME = pt_BR.UTF-8
+# makefile (from 'Makefile', line 43)
+PART = TM4C1294NCPDT
+# makefile (from '../../TivaWare/makedefs', line 47)
+os := Linux
+# makefile (from 'Makefile', line 48)
+ROOT = ../../TivaWare
+# makefile (from '../../TivaWare/makedefs', line 167)
+AFLAGS = -mthumb ${CPU} ${FPU} -MD ${patsubst %,-I%,${subst :, ,${IPATH}}}
+# makefile (from '../../TivaWare/makedefs', line 69)
+PREFIX := arm-none-eabi
+# environment
+INVOCATION_ID = a5384d5c59794069817bd6a2196ba2a0
+# makefile (from '../../TivaWare/makedefs', line 131)
+LIBGCC := /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+fp/hard/libgcc.a
+# environment
+USERNAME = calper
+# makefile (from '../../TivaWare/makedefs', line 87)
+CPU = -mcpu=cortex-m4
+# environment
+LC_TELEPHONE = pt_BR.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# makefile (from '../../TivaWare/makedefs', line 82)
+ARMGCC_ROOT := /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/..
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# makefile (from 'Makefile', line 100)
+ENTRY_project = ResetISR
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = calper
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 2405
+# environment
+DISPLAY = :1
+# environment
+USER = calper
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+ARM_COMPILER = /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin
+# makefile (from '../../TivaWare/makedefs', line 126)
+LDFLAGS = --gc-sections
+# environment
+MANAGERPID = 1920
+# environment
+LC_MEASUREMENT = pt_BR.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 104793
+# environment
+_ = /usr/share/code/code
+# environment
+LC_PAPER = pt_BR.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from '../../TivaWare/makedefs', line 168)
+CFLAGS = -mthumb ${CPU} ${FPU} -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_${PART} -c -Os ${CFLAGSgcc} ${patsubst %,-I%,${subst :, ,${IPATH}}}
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+LC_CTYPE = pt_BR.UTF-8
+# environment
+JOURNAL_STREAM = 8:41073
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/calper
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 99)
+SCATTERgcc_project = project.ld
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-072ac5d1-1.69.2-main.sock
+# environment
+PAPERSIZE = a4
+# makefile (from 'Makefile', line 58)
+FreeRTOSConfig = .
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# makefile (from '../../TivaWare/makedefs', line 121)
+LD = ${PREFIX}-ld
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from '../../TivaWare/makedefs', line 75)
+CC = ${PREFIX}-gcc
+# makefile (from '../../TivaWare/makedefs', line 146)
+OBJCOPY = ${PREFIX}-objcopy
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = pt_BR.UTF-8
+# variable set hash-table stats:
+# Load=132/1024=13%, Rehash=0, Collisions=11/260=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# gcc (device 66310, inode 11272634): 8 files, no impossibilities.
+# . (device 66310, inode 11272555): 10 files, no impossibilities.
+
+# 18 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+gcc/%.o: %.c
+#  recipe to execute (from '../../TivaWare/makedefs', line 174):
+	@if [ 'x${VERBOSE}' = x ];                            \
+	 then                                                 \
+	     echo "  CC    ${<}";                             \
+	 else                                                 \
+	     echo ${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}; \
+	 fi
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+gcc/%.o: %.S
+#  recipe to execute (from '../../TivaWare/makedefs', line 192):
+	@if [ 'x${VERBOSE}' = x ];                               \
+	 then                                                    \
+	     echo "  AS    ${<}";                                \
+	 else                                                    \
+	     echo ${CC} ${AFLAGS} -D${COMPILER} -o ${@} -c ${<}; \
+	 fi
+	@${CC} ${AFLAGS} -D${COMPILER} -o ${@} -c ${<}
+
+gcc/%.a:
+#  recipe to execute (from '../../TivaWare/makedefs', line 210):
+	@if [ 'x${VERBOSE}' = x ];     \
+	 then                          \
+	     echo "  AR    ${@}";      \
+	 else                          \
+	     echo ${AR} -cr ${@} ${^}; \
+	 fi
+	@${AR} -cr ${@} ${^}
+
+gcc/%.axf:
+#  recipe to execute (from '../../TivaWare/makedefs', line 222):
+ 
+	@if [ 'x${SCATTERgcc_${notdir ${@:.axf=}}}' = x ];                    \
+	 then                                                                 \
+	     ldname="${ROOT}/gcc/standalone.ld";                              \
+	 else                                                                 \
+	     ldname="${SCATTERgcc_${notdir ${@:.axf=}}}";                     \
+	 fi;                                                                  \
+	 if [ 'x${VERBOSE}' = x ];                                            \
+	 then                                                                 \
+	     echo "  LD    ${@} ${LNK_SCP}";                                  \
+	 else                                                                 \
+	     echo ${LD} -T $${ldname}                                         \
+	          --entry ${ENTRY_${notdir ${@:.axf=}}}                       \
+	          ${LDFLAGSgcc_${notdir ${@:.axf=}}}                          \
+	          ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                  \
+	          '${LIBM}' '${LIBC}' '${LIBGCC}';                            \
+	 fi;                                                                  \
+	${LD} -T $${ldname}                                                   \
+	      --entry ${ENTRY_${notdir ${@:.axf=}}}                           \
+	      ${LDFLAGSgcc_${notdir ${@:.axf=}}}                              \
+	      ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                      \
+	      '${LIBM}' '${LIBC}' '${LIBGCC}'
+	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
+
+# 4 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 07:51:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 07:51:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../TivaWare/makedefs:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:13:28
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 08:12:09
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 07:51:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../TivaWare/driverlib/gpio.h:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:11:38
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-24 19:37:12.577751
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+gcc/project.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 21:37:09.22488781
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/gcc/libFreeRTOSCore3.a:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 21:37:05.105526291
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 80):
+	@rm -rf ${COMPILER} ${wildcard *~}
+
+# Not a target:
+../../TivaWare/driverlib/debug.h:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:11:38
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../TivaWare/inc/hw_nvic.h:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:13:26
+#  File has been updated.
+#  Successfully updated.
+
+gcc/startup_gcc.o: startup_gcc.c startup_gcc.c /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h ../../TivaWare/inc/hw_nvic.h ../../TivaWare/inc/hw_types.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'startup_gcc'
+#  Last modified 2022-07-29 21:37:09.256912984
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '../../TivaWare/makedefs', line 174):
+	@if [ 'x${VERBOSE}' = x ];                            \
+	 then                                                 \
+	     echo "  CC    ${<}";                             \
+	 else                                                 \
+	     echo ${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}; \
+	 fi
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+# Not a target:
+FreeRTOSConfig.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 21:23:47.553338091
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/include/projdefs.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 17:23:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 07:51:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../TivaWare/driverlib/gcc/libdriver.a:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 21:37:03.908505926
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/include/list.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 17:23:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: gcc gcc/project.axf
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 17:23:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 07:51:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 17:23:54
+#  File has been updated.
+#  Successfully updated.
+
+gcc:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-29 21:37:09.26091613
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 86):
+	@mkdir -p ${COMPILER}
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/portable/MemMang/gcc/libFreeRTOSCore2.a:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 21:37:05.029462523
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 17:23:54
+#  File has been updated.
+#  Successfully updated.
+
+gcc/project.o: project.c project.c /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h ../../TivaWare/inc/hw_memmap.h ../../TivaWare/driverlib/debug.h ../../TivaWare/driverlib/gpio.h ../../TivaWare/driverlib/sysctl.h ../../FreeRTOS/FreeRTOS/Source/include/FreeRTOS.h /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h FreeRTOSConfig.h ../../FreeRTOS/FreeRTOS/Source/include/projdefs.h ../../FreeRTOS/FreeRTOS/Source/include/portable.h ../../FreeRTOS/FreeRTOS/Source/include/deprecated_definitions.h ../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h ../../FreeRTOS/FreeRTOS/Source/include/mpu_wrappers.h FreeRTOSConfig.h ../../FreeRTOS/FreeRTOS/Source/include/task.h ../../FreeRTOS/FreeRTOS/Source/include/list.h ../../TivaWare/driverlib/rom.h ../../TivaWare/driverlib/rom_map.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'project'
+#  Last modified 2022-07-29 21:37:09.22488781
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '../../TivaWare/makedefs', line 174):
+	@if [ 'x${VERBOSE}' = x ];                            \
+	 then                                                 \
+	     echo "  CC    ${<}";                             \
+	 else                                                 \
+	     echo ${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}; \
+	 fi
+	@${CC} ${CFLAGS} -D${COMPILER} -o ${@} ${<}
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/include/task.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 17:23:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 08:12:09
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+startup_gcc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-27 23:04:27.118474
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../TivaWare/driverlib/rom.h:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:11:38
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../TivaWare/inc/hw_types.h:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:13:26
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 07:51:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-02 08:12:10
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+gcc/startup_gcc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 21:37:09.252909837
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../TivaWare/driverlib/rom_map.h:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:11:38
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+project.ld:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:13:24
+ 
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+project.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 21:31:41.555170319
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 17:23:54
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/gcc/libFreeRTOSCore.a:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-29 21:37:04.709189876
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../TivaWare/driverlib/sysctl.h:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:11:38
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../TivaWare/inc/hw_memmap.h:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-07 00:13:26
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../../FreeRTOS/FreeRTOS/Source/include/portable.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-22 17:23:54
+#  File has been updated.
+#  Successfully updated.
+
+gcc/project.axf: gcc/project.o gcc/startup_gcc.o ../../FreeRTOS/FreeRTOS/Source/gcc/libFreeRTOSCore.a ../../FreeRTOS/FreeRTOS/Source/portable/MemMang/gcc/libFreeRTOSCore2.a ../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/gcc/libFreeRTOSCore3.a ../../TivaWare/driverlib/gcc/libdriver.a project.ld
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'project'
+#  Last modified 2022-07-29 21:37:09.26091613
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from '../../TivaWare/makedefs', line 222):
+	@if [ 'x${SCATTERgcc_${notdir ${@:.axf=}}}' = x ];                    \
+	 then                                                                 \
+	     ldname="${ROOT}/gcc/standalone.ld";                              \
+	 else                                                                 \
+	     ldname="${SCATTERgcc_${notdir ${@:.axf=}}}";                     \
+	 fi;                                                                  \
+	 if [ 'x${VERBOSE}' = x ];                                            \
+	 then                                                                 \
+	     echo "  LD    ${@} ${LNK_SCP}";                                  \
+	 else                                                                 \
+	     echo ${LD} -T $${ldname}                                         \
+	          --entry ${ENTRY_${notdir ${@:.axf=}}}                       \
+	          ${LDFLAGSgcc_${notdir ${@:.axf=}}}                          \
+	          ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                  \
+	          '${LIBM}' '${LIBC}' '${LIBGCC}';                            \
+	 fi;                                                                  \
+	${LD} -T $${ldname}                                                   \
+	      --entry ${ENTRY_${notdir ${@:.axf=}}}                           \
+	      ${LDFLAGSgcc_${notdir ${@:.axf=}}}                              \
+	      ${LDFLAGS} -o ${@} $(filter %.o %.a, ${^})                      \
+	      '${LIBM}' '${LIBC}' '${LIBGCC}'
+	@${OBJCOPY} -O binary ${@} ${@:.axf=.bin}
+
+# Not a target:
+__dummy__:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=46/1024=4%, Rehash=0, Collisions=2/122=2%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 65 / storage = 2168 B / avg = 33 B
+# current buf: size = 8162 B / used = 2168 B / count = 65 / avg = 33 B
+
+# strcache performance: lookups = 120 / hit rate = 45%
+# hash-table stats:
+# Load=65/8192=1%, Rehash=0, Collisions=1/120=1%
+# Finished Make data base on Fri Jul 29 21:45:40 2022
+
+ 

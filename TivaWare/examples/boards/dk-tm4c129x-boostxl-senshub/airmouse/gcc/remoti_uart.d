@@ -1,0 +1,12 @@
+gcc/remoti_uart.o: remoti_uart.c \
+ /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h \
+ /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h \
+ /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+ /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+ /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ /home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+ ../../../../inc/hw_uart.h ../../../../driverlib/uart.h \
+ ../../../../driverlib/interrupt.h ../../../../driverlib/sysctl.h \
+ ../../../../utils/ringbuf.h remoti_uart.h

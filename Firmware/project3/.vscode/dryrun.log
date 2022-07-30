@@ -1,0 +1,41 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/calper/Projetos/TM4C1294NCPDT/Firmware/project3'
+mkdir -p gcc
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    project.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_TM4C1294NCPDT -c -Os -DTARGET_IS_TM4C129_RA1 -I../../TivaWare -I../../FreeRTOS -I../../FreeRTOS/FreeRTOS/Source/include -I../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/project.o project.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_TM4C1294NCPDT -c -Os -DTARGET_IS_TM4C129_RA1 -I../../TivaWare -I../../FreeRTOS -I../../FreeRTOS/FreeRTOS/Source/include -I../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/project.o project.c
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    startup_gcc.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_TM4C1294NCPDT -c -Os -DTARGET_IS_TM4C129_RA1 -I../../TivaWare -I../../FreeRTOS -I../../FreeRTOS/FreeRTOS/Source/include -I../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/startup_gcc.o startup_gcc.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_TM4C1294NCPDT -c -Os -DTARGET_IS_TM4C129_RA1 -I../../TivaWare -I../../FreeRTOS -I../../FreeRTOS/FreeRTOS/Source/include -I../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F -I. -Dgcc -o gcc/startup_gcc.o startup_gcc.c
+if [ 'xproject.ld' = x ];                    \
+ then                                                                 \
+     ldname="../../TivaWare/gcc/standalone.ld";                              \
+ else                                                                 \
+     ldname="project.ld";                     \
+ fi;                                                                  \
+ if [ 'x' = x ];                                            \
+ then                                                                 \
+     echo "  LD    gcc/project.axf ";                                  \
+ else                                                                 \
+     echo arm-none-eabi-ld -T ${ldname}                                         \
+          --entry ResetISR                       \
+                                    \
+          --gc-sections -o gcc/project.axf gcc/project.o gcc/startup_gcc.o ../../FreeRTOS/FreeRTOS/Source/gcc/libFreeRTOSCore.a ../../FreeRTOS/FreeRTOS/Source/portable/MemMang/gcc/libFreeRTOSCore2.a ../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/gcc/libFreeRTOSCore3.a ../../TivaWare/driverlib/gcc/libdriver.a                  \
+          '/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a' '/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a' '/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+fp/hard/libgcc.a';                            \
+ fi;                                                                  \
+arm-none-eabi-ld -T ${ldname}                                                   \
+      --entry ResetISR                           \
+                                    \
+      --gc-sections -o gcc/project.axf gcc/project.o gcc/startup_gcc.o ../../FreeRTOS/FreeRTOS/Source/gcc/libFreeRTOSCore.a ../../FreeRTOS/FreeRTOS/Source/portable/MemMang/gcc/libFreeRTOSCore2.a ../../FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/gcc/libFreeRTOSCore3.a ../../TivaWare/driverlib/gcc/libdriver.a                      \
+      '/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a' '/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a' '/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+fp/hard/libgcc.a'
+arm-none-eabi-objcopy -O binary gcc/project.axf gcc/project.bin
+make: Leaving directory '/home/calper/Projetos/TM4C1294NCPDT/Firmware/project3'
+ 

@@ -1,0 +1,20 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/calper/Projetos/TM4C1294NCPDT/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F'
+ 
+mkdir -p gcc
+if [ 'x' = x ];                            \
+ then                                                 \
+     echo "  CC    port.c";                             \
+ else                                                 \
+     echo arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I../../../include -I../../../../../../Firmware/project -I. -Dgcc -o gcc/port.o port.c; \
+ fi
+arm-none-eabi-gcc -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -ffunction-sections -fdata-sections -MD -std=c99 -Wall -pedantic -DPART_ -c -Os  -I../../../include -I../../../../../../Firmware/project -I. -Dgcc -o gcc/port.o port.c
+if [ 'x' = x ];     \
+ then                          \
+     echo "  AR    gcc/libFreeRTOSCore3.a";      \
+ else                          \
+     echo arm-none-eabi-ar -cr gcc/libFreeRTOSCore3.a gcc/port.o; \
+ fi
+arm-none-eabi-ar -cr gcc/libFreeRTOSCore3.a gcc/port.o
+make: Leaving directory '/home/calper/Projetos/TM4C1294NCPDT/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F'
+ 

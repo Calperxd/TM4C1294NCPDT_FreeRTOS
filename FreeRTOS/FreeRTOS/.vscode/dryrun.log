@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/calper/Projetos/TM4C1294NCPDT/FreeRTOS/FreeRTOS'
+make: Leaving directory '/home/calper/Projetos/TM4C1294NCPDT/FreeRTOS/FreeRTOS'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
