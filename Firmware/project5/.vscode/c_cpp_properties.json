@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../TivaWare",
+                "${workspaceFolder}/../../FreeRTOS/FreeRTOS/Source/include",
+                "${workspaceFolder}/../../FreeRTOS/FreeRTOS/Source/portable/GCC",
+                "/home/calper/Projetos/TM4C1294NCPDT/FreeRTOS/FreeRTOS/Source/portable/CodeWarrior/ColdFire_V2"
+            ],
+            "defines": [],
+            "compilerPath": "/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin",
+            "cStandard": "c99",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}
