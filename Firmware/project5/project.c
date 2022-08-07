@@ -27,16 +27,20 @@ system and runs
 #include "driverlib/rom_map.h"
 
 static TaskHandle_t task1 = NULL;
+static uint8_t Led1 = 0;
 
 
 // toggle the led 1 every second
 void taskLed1(void *pvParameters)
 {
-    Led = GPIO_PIN_1;
+    TickType_t firstTime;
+    const TickType_t interval = pdMS_TO_TICKS(5);
+    firstTime = xTaskGetTickCount();
     while (1)
     {
-        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);
-        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0x0);
+        vTaskDelayUntil(&firstTime, interval);
+        Led1 ^= 1UL << 1;
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, Led1);
     }
 }
 
