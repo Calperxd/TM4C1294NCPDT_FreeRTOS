@@ -34,7 +34,7 @@ static uint8_t Led1 = 0;
 void taskLed1(void *pvParameters)
 {
     TickType_t firstTime;
-    const TickType_t interval = pdMS_TO_TICKS(5);
+    const TickType_t interval = pdMS_TO_TICKS(500);
     firstTime = xTaskGetTickCount();
     while (1)
     {
