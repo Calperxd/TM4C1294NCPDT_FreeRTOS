@@ -1,0 +1,6 @@
+#folders
+
+FreeRTOS/FreeRTOS/Source/gcc/
+FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM4F/gcc/
+FreeRTOS/FreeRTOS/Source/portable/MemMang/gcc/
+TivaWare/driverlib/gcc/
