@@ -45,7 +45,7 @@ ROOT=../../../../../TivaWare
 #
 # The base directory for FreeRTOSConfig.
 #
-FreeRTOSConfig=../../../../../Firmware/project
+FreeRTOSConfig=../../../../../Firmware
 
 #
 # The base directory of include FreeRTOS.

@@ -55,7 +55,7 @@ ROOTFREERTOS=../../FreeRTOS
 #
 # The base directory for FreeRTOSConfig.
 #
-FreeRTOSConfig=.
+FreeRTOSConfig=..
 
 #
 # Include the common make definitions.
@@ -78,6 +78,7 @@ all: ${COMPILER}/project.axf
 #
 clean:
 	@rm -rf ${COMPILER} ${wildcard *~}
+	@rm -rf null.d
 
 #
 # The rule to create the target directory.
