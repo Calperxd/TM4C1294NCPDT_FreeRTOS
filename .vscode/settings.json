@@ -1,6 +1,7 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
-        "freertosconfig.h": "c"
+        "freertosconfig.h": "c",
+        "freertos.h": "c"
     }
 }

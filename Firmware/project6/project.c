@@ -65,7 +65,7 @@ void Task3(void *pvParameters)
     while (1)
     {
         pin = GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_0);
-        vTaskDelay(pdMS_TO_TICKS(100));     // software debouce
+        vTaskDelay(pdMS_TO_TICKS(150));     // software debouce
         if (pin == 0)
         {
             option++;
