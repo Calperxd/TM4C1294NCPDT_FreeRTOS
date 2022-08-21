@@ -5,3 +5,9 @@ project3/gcc
 project4/gcc
 project5/gcc
 project6/gcc
+project7/gcc
+
+
+
+# files
+*.map
