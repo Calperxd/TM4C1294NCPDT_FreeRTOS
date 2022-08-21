@@ -56,7 +56,7 @@
 #define configUSE_CO_ROUTINES 		                    0
 #define configSUPPORT_DYNAMIC_ALLOCATION                1
 
-#define configMAX_PRIORITIES		                    ( 5 )
+#define configMAX_PRIORITIES		                    ( 10 )
 #define configMAX_CO_ROUTINE_PRIORITIES                 ( 3 )
 
 /* Set the following definitions to 1 to include the API function, or zero
@@ -68,6 +68,7 @@ to exclude the API function. */
 #define INCLUDE_vTaskSuspend                            1
 #define INCLUDE_vTaskResume                             1
 #define INCLUDE_vTaskDelete                             1
+#define INCLUDE_vTaskPrioritySet                        1
 
 #define configKERNEL_INTERRUPT_PRIORITY 		        255
 /* !!!! configMAX_SYSCALL_INTERRUPT_PRIORITY must not be set to zero !!!!
