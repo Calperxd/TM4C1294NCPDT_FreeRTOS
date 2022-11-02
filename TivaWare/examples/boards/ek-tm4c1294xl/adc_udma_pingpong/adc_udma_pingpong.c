@@ -189,16 +189,12 @@ ADCSeq0Handler(void)
     // Determine which buffer as been filled based on the UDMA_MODE_STOP flag
     // and update the buffer status.
     //
-    if ((uDMAChannelModeGet(UDMA_CHANNEL_ADC0 | UDMA_PRI_SELECT) ==
-                            UDMA_MODE_STOP) &&
-                           (pui32BufferStatus[0] == FILLING))
+    if ((uDMAChannelModeGet(UDMA_CHANNEL_ADC0 | UDMA_PRI_SELECT) == UDMA_MODE_STOP) && (pui32BufferStatus[0] == FILLING))
     {
         pui32BufferStatus[0] = FULL;
         pui32BufferStatus[1] = FILLING;
     }
-    else if ((uDMAChannelModeGet(UDMA_CHANNEL_ADC0 | UDMA_ALT_SELECT) ==
-                                 UDMA_MODE_STOP) &&
-                                (pui32BufferStatus[1] == FILLING))
+    else if ((uDMAChannelModeGet(UDMA_CHANNEL_ADC0 | UDMA_ALT_SELECT) == UDMA_MODE_STOP) && (pui32BufferStatus[1] == FILLING))
     {
         pui32BufferStatus[0] = FILLING;
         pui32BufferStatus[1] = FULL;

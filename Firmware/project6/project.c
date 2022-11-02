@@ -17,6 +17,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include <math.h>
 
 /* TivaWare includes */
 #include "inc/hw_memmap.h"

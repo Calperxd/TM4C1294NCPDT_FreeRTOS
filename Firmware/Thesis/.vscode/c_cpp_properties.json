@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../TivaWare",
+                "${workspaceFolder}/../../FreeRTOS/FreeRTOS/Source/include",
+                "/home/calper/projects/TM4C1294NCPDT_FreeRTOS/FreeRTOS/FreeRTOS/Source/include"
+            ],
+            "defines": [],
+            "compilerPath": "/home/calper/gcc-arm-11.2-2022.02-x86_64-arm-none-eabi/bin",
+            "cStandard": "c99",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}
