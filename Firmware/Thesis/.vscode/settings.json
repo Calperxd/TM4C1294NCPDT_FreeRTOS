@@ -9,7 +9,17 @@
         "rom.h": "c",
         "linearregression.h": "c",
         "stdlib.h": "c",
-        "uartstdio.h": "c"
+        "uartstdio.h": "c",
+        "potentiometer.h": "c",
+        "rom_map.h": "c",
+        "pin_map.h": "c",
+        "setup.h": "c",
+        "hw_gpio.h": "c",
+        "hw_ints.h": "c",
+        "hw_sysctl.h": "c",
+        "hw_types.h": "c",
+        "debug.h": "c",
+        "gpio.h": "c"
     },
     "makefile.launchConfigurations": [
         {

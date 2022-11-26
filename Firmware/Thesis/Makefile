@@ -89,6 +89,7 @@ ${COMPILER}:
 #
 # Rules for building the project example.
 #
+${COMPILER}/project.axf: ${COMPILER}/Potentiometer.o
 ${COMPILER}/project.axf: ${COMPILER}/project.o
 ${COMPILER}/project.axf: ${COMPILER}/startup_${COMPILER}.o
 ${COMPILER}/project.axf: ${COMPILER}/LinearRegression.o
