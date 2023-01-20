@@ -12,19 +12,19 @@
 #define LINEARREGRESSION_H
 #include <math.h>
 
-typedef struct LinearInterpolationTable
+typedef struct LinearRegressionTable
 {
     int maxIndex;
     int *x;
     float *y;
-}LinearInterpolationTable;
+}LinearRegressionTable;
 
 /**
  * @brief This function executes a LinearRegression on the  array x and y, note that you must pass the leanght of array for both x and y
  * 
  * @param table the array to perform the linear regression
  */
-void tableRegister(LinearInterpolationTable table);
+void tableRegister(LinearRegressionTable table);
 /**
  * @brief Get the Angular Coeffiecient
  * 

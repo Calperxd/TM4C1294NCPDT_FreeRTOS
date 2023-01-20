@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="BSP_ProjectForDebugging">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/FreeRTOS/FreeRTOS/Demo/CORTUS_APS3_GCC/BSP_ProjectForDebugging.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

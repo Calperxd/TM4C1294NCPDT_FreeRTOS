@@ -3,7 +3,7 @@
 static float angularCoef;
 static float linearCoef;
 
-void tableRegister(LinearInterpolationTable table)
+void tableRegister(LinearRegressionTable table)
 {
     float xy = 0;
     float x2 = 0;

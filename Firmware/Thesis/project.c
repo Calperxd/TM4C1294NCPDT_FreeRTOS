@@ -23,10 +23,10 @@
 static TaskHandle_t taskLED = NULL;
 static TaskHandle_t taskADC = NULL;
 static TaskHandle_t taskPOT = NULL;
-static TaskHandle_t taskTimeout = NULL;
+static TaskHandle_t taskListener = NULL;
 
 // Table
-LinearInterpolationTable table;
+LinearRegressionTable table;
 
 // Buffer adc
 uint32_t pui32ADC0Value[1];
@@ -34,16 +34,30 @@ uint32_t pui32ADC0Value[1];
 char angular[5];
 char linear[5];
 
+uint8_t time[2] = {0};
+uint8_t digitCounter = 0;
+uint8_t sampleTime = 15;
+bool StartSampling =  false;
 
 // turn on
 void TaskLED(void *pvParameters)
 {
     while (1)
     {
-        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 1);
-        vTaskDelay(pdMS_TO_TICKS(500));
-        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0);
-        vTaskDelay(pdMS_TO_TICKS(500));
+        if (!StartSampling)
+        {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 1);
+            vTaskDelay(pdMS_TO_TICKS(500));
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0);
+            vTaskDelay(pdMS_TO_TICKS(500));
+        }
+        if (StartSampling)
+        {
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 1);
+            vTaskDelay(pdMS_TO_TICKS(100));
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0);
+            vTaskDelay(pdMS_TO_TICKS(100));
+        }
     }
 }
 
@@ -51,10 +65,6 @@ void TaskLED(void *pvParameters)
 void TaskADC(void *pvParameters)
 {
     uint8_t snum[4];
-    //char ampBuff[5];
-    //char freqBuff[5];
-    //ftoa(amp,ampBuff,4);
-    //ftoa(freq,freqBuff,4);
     while (1)
     {
         ADCProcessorTrigger(ADC0_BASE, 3);
@@ -67,64 +77,90 @@ void TaskADC(void *pvParameters)
         UARTCharPut(UART0_BASE, snum[2]);
         UARTCharPut(UART0_BASE, snum[3]);
         UARTCharPut(UART0_BASE, 10);
-        vTaskDelay(1);
     }
 }
 
 void TaskPOT(void *pvParameters)
 {
-    uint32_t buttom;
-    uint32_t buttom2;
-    // Pin CS must be high
-    GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_2, (1<<GPIO_PIN_2));
+    uint32_t btnUp;
+    uint32_t btnDown;
     while (1)
     {
-        buttom = GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_0);
-        buttom2 = GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_1);
-        if(buttom == 0)
+        btnUp = GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_0);
+        btnDown = GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_1);
+        if(btnUp == 0)
         {
             up();
-            UARTCharPut(UART0_BASE, 64);
         }
-        if (buttom2 == 0)
+        if(btnDown == 0)
         {
             down();
-            UARTCharPut(UART0_BASE, 65);
         }
-
         vTaskDelay(pdMS_TO_TICKS(50));
     }
-    
 }
 
-void TaskTimeout(void *pvParameters)
+static void Commands(uint32_t command)
 {
-    vTaskSuspend(taskLED);
-    //vTaskSuspend(taskPOT);
-    vTaskDelay(pdMS_TO_TICKS(15000));
+    switch (command)
+    {
+        case 35:
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 1);
+            vTaskDelay(pdMS_TO_TICKS(25));
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0);
+            vTaskDelay(pdMS_TO_TICKS(25));
+            break;
+        case 36:
+            up();
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 1);
+            vTaskDelay(pdMS_TO_TICKS(25));
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0);
+            vTaskDelay(pdMS_TO_TICKS(25));
+            break;
+        case 37:
+            down();
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 1);
+            vTaskDelay(pdMS_TO_TICKS(25));
+            GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0);
+            vTaskDelay(pdMS_TO_TICKS(25));
+            break;
+
+        default:
+            time[digitCounter] = command;
+            UARTCharPut(UART0_BASE, time[digitCounter]);
+            digitCounter++;
+            break;
+    }
+    if (digitCounter == 2)
+    {
+        sampleTime = atoi(time);
+        digitCounter = 0;
+        StartSampling =  true;
+    }
+}
+
+
+void TaskListener(void *pvParameters)
+{
     vTaskSuspend(taskADC);
-    UARTCharPut(UART0_BASE, 10);
-    vTaskResume(taskLED);
-    //vTaskResume(taskPOT);
+    uint32_t Chars = 0;
     while (1)
     {
-       /* UARTCharPut(UART0_BASE, angular[0]);
-        UARTCharPut(UART0_BASE, angular[1]);
-        UARTCharPut(UART0_BASE, angular[2]);
-        UARTCharPut(UART0_BASE, angular[3]);
-        UARTCharPut(UART0_BASE, angular[4]);
-        UARTCharPut(UART0_BASE, 10);
-        UARTCharPut(UART0_BASE, 13);
-        UARTCharPut(UART0_BASE, linear[0]);
-        UARTCharPut(UART0_BASE, linear[1]);
-        UARTCharPut(UART0_BASE, linear[2]);
-        UARTCharPut(UART0_BASE, linear[3]);
-        UARTCharPut(UART0_BASE, linear[4]);
-        UARTCharPut(UART0_BASE, 10);
-        UARTCharPut(UART0_BASE, 13);
-        vTaskDelay(pdMS_TO_TICKS(1000));*/
+        while(UARTCharsAvail(UART0_BASE))
+        {
+            Chars = UARTCharGetNonBlocking(UART0_BASE);
+            Commands(Chars);
+        }
+        if (StartSampling)
+        {
+            vTaskResume(taskADC);
+            vTaskDelay(pdMS_TO_TICKS(1000*sampleTime));
+            vTaskSuspend(taskADC);
+            sampleTime = 0;
+            StartSampling =  false;
+        }
+        vTaskDelay(pdMS_TO_TICKS(100));
     }
-    
 }
 
 int main(void)
@@ -144,16 +180,13 @@ int main(void)
 
     //char ampBuff[5];
     //char freqBuff[5];
-    ftoa(getAngularCoef(),angular,5);
-    ftoa(getLinearCoef(),linear,5);
-
-
-
+    //ftoa(getAngularCoef(),angular,5);
+    //ftoa(getLinearCoef(),linear,5);
 
     xTaskCreate((TaskFunction_t)TaskLED, "LED", configMINIMAL_STACK_SIZE, NULL, 4, &taskLED );
     xTaskCreate((TaskFunction_t)TaskADC, "ADC", configMINIMAL_STACK_SIZE, NULL, 4, &taskADC );
-    xTaskCreate((TaskFunction_t)TaskPOT, "Potentiometer", configMINIMAL_STACK_SIZE, NULL, 4, &taskPOT );
-    xTaskCreate((TaskFunction_t)TaskTimeout, "Timeout", configMINIMAL_STACK_SIZE, NULL, 4, &taskTimeout );
+    xTaskCreate((TaskFunction_t)TaskPOT, "Potentiometer", configMINIMAL_STACK_SIZE, NULL, 7, &taskPOT );
+    xTaskCreate((TaskFunction_t)TaskListener, "Listener", configMINIMAL_STACK_SIZE, NULL, 4, &taskListener );
     vTaskStartScheduler();
     while (1){}
 }
